@@ -1,0 +1,15 @@
+<h1>This is the contact us page.</h1>
+
+<br />
+
+<% if @country == "us" %>
+   <p>I'm in US</p>
+<% elsif @country == "uk" %>
+    <p>I'm in UK</p>
+<% else %>
+    <p>I'm in else where</p>
+<% end %>
+
+<br />
+
+<%= link_to('About us', {:action => 'about'}) %>
